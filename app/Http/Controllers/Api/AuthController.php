@@ -58,4 +58,14 @@ class AuthController extends Controller
       'token' => $token->plainTextToken,
     ], 201);
   }
+
+  /**
+   * Get the authenticated User.
+   * @param \Illuminate\Http\Request $request
+   * @return \Illuminate\Http\Response
+   */
+  public function user(Request $request)
+  {
+    return response()->json($request->user());
+  }
 }
