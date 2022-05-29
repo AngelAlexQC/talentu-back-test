@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\OfferController;
 use App\Http\Controllers\Api\UserController;
 
 /*
@@ -27,5 +28,12 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
         'store' => 'api.users.store',
         'update' => 'api.users.update',
         'destroy' => 'api.users.destroy',
+    ]);
+    Route::apiResource('offers', OfferController::class)->names([
+        'index' => 'api.offers.index',
+        'show' => 'api.offers.show',
+        'store' => 'api.offers.store',
+        'update' => 'api.offers.update',
+        'destroy' => 'api.offers.destroy',
     ]);
 });
