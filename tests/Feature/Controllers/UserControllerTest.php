@@ -32,7 +32,7 @@ class UserControllerTest extends TestCase
     {
         $user = User::create([
             'name' => 'Admin',
-            'email' => 'adminpass',
+            'email' => 'admin@admin.com',
             'password' => Hash::make(self::PASSWORD),
         ]);
 
