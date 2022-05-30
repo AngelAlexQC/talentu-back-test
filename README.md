@@ -2,11 +2,13 @@
 
 # Talentu Backend Test
 
+## [View Deplyment](https://talentu-back.herokuapp.com/)
+
 ## Requirements
-Linux (Debian, Ubuntu, CentOS, RHEL, WSL)
-PHP up to 8.1
-composer
-Docker version up to 20.10.5
+* Linux (Debian, Ubuntu, CentOS, RHEL, WSL)
+* PHP up to 8.1
+* composer
+* Docker version up to 20.10.5
 ## Deploy Locally
 
 ```bash
