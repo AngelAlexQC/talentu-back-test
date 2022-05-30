@@ -25,3 +25,22 @@ composer install
 ./vendor/bin/sail up -d
 ./vendor/bin/sail artisan test
 ```
+
+## Routes
+### Authentication
+* POST /api/login
+* POST /api/register
+
+### Users
+* GET /api/users
+* GET /api/users/{id}
+* POST /api/users
+* PUT /api/users/{id}
+* DELETE /api/users/{id}
+
+### Offers
+* GET /api/offers
+* GET /api/offers/{id}
+* POST /api/offers
+* PUT /api/offers/{id}
+* DELETE /api/offers/{id}
